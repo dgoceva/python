@@ -4,7 +4,7 @@ Created on 5.03.2019 г.
 @author: PC1216
 '''
 import string
-'''
+
 a1 = eval(input('ENTER a1: '))
 
 a = eval(input('enter a number: '))
@@ -59,7 +59,7 @@ for x in range(1,N+1):
 print('{0}!='.format(N),fact)
 print(N,'!=',fact)
 print(str(N)+'!='+str(fact))
-'''
+
 listSample = [3,4,5,'one','two',3.1456]
 for x in listSample:
     if type(x) is str:
@@ -68,4 +68,3 @@ for x in listSample:
         print()
     else:
         print(x)
-
