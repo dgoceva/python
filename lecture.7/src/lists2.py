@@ -90,6 +90,22 @@ setc = set('simpleset=sets')
 print(setc)
 print(list(setc))
 from colorama import init,Fore,Back,Style
-init(convert=True)
-print(Fore.RED+'hi')
+import sys
+from colorama import init,Fore,Back,Style
+
+if sys.stdout.isatty() :
+    init(convert=True)
+print(Fore.CYAN+'Hello')
+
+sys.stdout.write("\033[1;31m")
+print('All following prints will be red ...')
+
+from colors import color, red, blue
+
+# common colors
+print(red('This is red'))
+print(blue('This is blue'))
+
+# colors by name or code
+print(color('Print colors by name or code', 'white', '#8a2be2'))
 print(setc)
