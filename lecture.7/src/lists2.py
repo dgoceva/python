@@ -96,6 +96,8 @@ from colorama import init,Fore,Back,Style
 if sys.stdout.isatty() :
     init(convert=True)
 print(Fore.CYAN+'Hello')
+print(setc)
+print(Style.RESET_ALL)
 
 sys.stdout.write("\033[1;31m")
 print('All following prints will be red ...')
