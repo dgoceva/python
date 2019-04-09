@@ -91,7 +91,6 @@ print(setc)
 print(list(setc))
 from colorama import init,Fore,Back,Style
 import sys
-from colorama import init,Fore,Back,Style
 
 if sys.stdout.isatty() :
     init(convert=True)
